@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.prova.filereaderengine</groupId>
-	<artifactId>FileReaderEngineApp</artifactId>
+	<artifactId>FileReaderEngineApplication</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>FileReaderEngineApp</name>
+	<name>FileReaderEngineApplication</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
