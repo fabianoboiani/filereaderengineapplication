@@ -64,12 +64,13 @@ public class GeradorRelatorio {
 				for (Item item : venda.getItemVendidos()) {
 					valorDaVenda = valorDaVenda.add(item.getPreco().multiply(BigDecimal.valueOf(item.getQuantidade())));
 				}
-				//System.out.println(venda.getNome()+":"+valorDaVenda);
+				System.out.println(venda.getNome()+":"+valorDaVenda);
 				if (menorValor == null) {
 					menorValor = valorDaVenda;
 					piorVendedor = venda.getNome();
 				} else if (valorDaVenda.compareTo(menorValor) < 0) {
 					piorVendedor = venda.getNome();
+					menorValor = valorDaVenda;
 				}
 			}
 		} else {
@@ -87,7 +88,7 @@ public class GeradorRelatorio {
 				for (Item item : venda.getItemVendidos()) {
 					valorDaVenda = valorDaVenda.add(item.getPreco().multiply(BigDecimal.valueOf(item.getQuantidade())));
 				}
-				//System.out.println(venda.getIdVenda()+":"+valorDaVenda);
+				System.out.println(venda.getIdVenda()+":"+valorDaVenda);
 				if (valorDaVenda.compareTo(maiorValor) > 0) {
 					idVendaMaisCara = venda.getIdVenda();
 					maiorValor = valorDaVenda;
